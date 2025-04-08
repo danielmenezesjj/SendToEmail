@@ -1,4 +1,10 @@
 package com.sendEmailToTrello.sendEmailToTrello.dto;
 
-public record EmailSendDTO(String destinatario, String assunto, String conteudo) {
-}
+import java.util.List;
+
+public record EmailSendDTO(
+        List<String> destinatarios,
+        String assunto,
+        String conteudo
+) {}
+
